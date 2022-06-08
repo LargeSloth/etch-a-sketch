@@ -5,14 +5,19 @@
 }
 
 #canvas {
-    display: grid;
-    grid-gap: 1em;
+    display: inline-grid;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
+    height: 575px;
+    width: 575px;
 }
 
 .grid-item {
     padding: 1em;
     border: 1px solid grey;
     text-align: center;
+}
+
+.grid-item:hover {
+    background-color: black;
 }
