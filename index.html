@@ -10,9 +10,12 @@
 </head>
 <body>
     <div class="buttons">
-        <button class="reset" onClick="window.location.reload()">temp clear</button>
-        <button class="gridSize">grid size</button>
-        <button class="clear">clear</button>
+        <button class="clear" onclick="window.location.reload()">clear</button>
+    </div>
+
+    <div class="GRSlider">
+        <input type="range" min="8" max="96" value="16" step="8" class="slider" id="gridSize">
+        <p>Size: <span id="GS"></span></p>
     </div>
 
     <div class="container">
