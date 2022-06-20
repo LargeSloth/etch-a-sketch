@@ -1,5 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-variant: small-caps;
+}
+
+.mode {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7.5px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .board {
     width: 500px;
     height: 500px;
     display: grid;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}    
+
+.btnBlack, .btnGrey, .btnEraser, .btnRandom, .btnReset {
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btnBlack {
+    background-color: black;
+    color: white;
+}
+
+.btnGrey {
+    background-color: grey;
+    color: white;
+}
+
+.btnRandom {
+    font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+}
+
+.btnEraser, .btnReset {
+    background-color: white;
+}
+
+.sliderContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.slider {
+    cursor: pointer;
+}
+
+.sizeofslider {
+    margin-left: 22px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
